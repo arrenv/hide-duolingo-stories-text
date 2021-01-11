@@ -20,6 +20,8 @@
 
         function hidePhrase () {
             jQuery("div[data-test='stories-element'] .phrase").css({'opacity':0});
+            jQuery("div[data-test='stories-element'] div[data-test='stories-element'] .phrase").css({'opacity':1});
+            jQuery("div[data-test='stories-element'] button[data-test='stories-choice'] + div .phrase").css({'opacity':1});
         }
 
         function hoverPhrase () {
@@ -27,6 +29,8 @@
                 jQuery(this).parents("div[data-test='stories-element']").find(".phrase").css({'opacity':1});
             }).mouseleave(function() {
                 jQuery(this).parents("div[data-test='stories-element']").find(".phrase").css({'opacity':0});
+                jQuery("div[data-test='stories-element'] div[data-test='stories-element'] .phrase").css({'opacity':1});
+                jQuery("div[data-test='stories-element'] button[data-test='stories-choice'] + div .phrase").css({'opacity':1});
             });
         }
     });
