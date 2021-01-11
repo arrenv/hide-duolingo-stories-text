@@ -1,6 +1,6 @@
 # Hide Duolingo Stories Text
 
-This script will hide the text by default on Duolingo stories, you can reveal the text on hover.
+This script will hide the text by default on Duolingo stories on desktop, you can reveal the text on hover.
 
 ## Installation
 
